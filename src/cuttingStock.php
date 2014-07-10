@@ -16,7 +16,7 @@ function cuttingStock($inputPieces, $outputSizes, $margin=0, $showWorking=false)
 	$fInput = array();
 	$fOutput = array();
 	for($i=1; $i<=$num_of_input; $i++) {
-		$fInput[$i] = $inputPieces[$i-1];
+		$fInput[$i] = $inputPieces[$i];
 		
 	}
 	if($showWorking == true) {
