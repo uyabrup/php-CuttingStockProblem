@@ -16,13 +16,16 @@ Parameters to pass:
 * 3) $margin - a buffer to add to each cut, default 0.
 * 4) $showWorking - true/false - whether script will show working out, default false.
 
+When passing `$inputPieces` the array index MUST start with 1 (i.e. the first piece!). If your array index starts with 0, an error will be generated.
+
 Output:
 
 A multidimentional array where `$array['piecesToCut']` is an associative array containing a list of cuts to make and from which element `sizeToCut` is the amount to cut from element `inputPiece`; and where `$array['leftovers']` is an indexed array (starting at 1) containing the amount left over on each `$inputPiece`.
 
 Example:
 
-Run `example.php`.
+* Run `example.php`.
+* Live demo is available at <a href="http://jlls.info/bigtelly/cs/index.php" target="_blank">my website</a>
 
 Algorithm:
 
