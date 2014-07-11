@@ -24,7 +24,7 @@ A multidimentional array where `$array['piecesToCut']` is an associative array c
 
 Example:
 
-* Run `example.php`.
+* Upload everything to a web server and run `index.php`.
 * Live demo is available at <a href="http://jlls.info/bigtelly/cs/index.php" target="_blank">my website</a>
 
 Algorithm:
