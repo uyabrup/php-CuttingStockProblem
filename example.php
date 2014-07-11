@@ -15,7 +15,7 @@ $outputs = explode("\n", $_POST['outputs']);
 $resp = cuttingStock($inputs, $outputs);
 
 echo "<p>";
-	echo "<h3>Output</h3>";
+	echo "<h3>Results</h3>";
 	echo "<br>";
 	// First, we identify the number of input pieces - this could be done in a variety of ways.
 	
@@ -26,7 +26,7 @@ echo "<p>";
 	// This effectively gives us a sorted list of cuts to make for each input piece.
 	
 	for ($i=1; $i<=$num_of_pieces; $i++) { 
-		echo "<div class='lead'>&raquo; Cuts from Piece ".$i."</div>";
+		echo "<div class='lead'>&bull; Cuts to make from Piece ".$i.":</div>";
 		
 		echo "<div class='progress'>";
 		$i2 = 0;
@@ -51,12 +51,10 @@ echo "<p>";
 
 	// Finally, we iterate through the array of leftover pieces and print
 	// how much is left over on each input piece.
-	
-	echo "<br><br>";
 	echo "<h3>Leftovers</h3>";
 	echo "<br>";
 	foreach ($resp['leftovers'] as $thePiece => $thePieceLeftover) {
-		echo "Piece number ".$thePiece." has ".$thePieceLeftover." leftover";
+		echo "&bull; Piece number ".$thePiece." has ".$thePieceLeftover." leftover";
 		echo "<br>";
 	}
 echo "</p>";

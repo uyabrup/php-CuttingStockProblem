@@ -1,6 +1,8 @@
 <?php
 
 function cuttingStock($inputPieces, $outputSizes, $margin=0, $showWorking=false) {
+	$inputPieces = array_map('intval', $inputPieces);
+	$outputSizes = array_map('intval', $outputSizes);
 	rsort($outputSizes);
 	
 	if($showWorking == true) {

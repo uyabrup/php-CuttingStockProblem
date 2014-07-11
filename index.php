@@ -9,7 +9,7 @@
 	<div class="form-group">
 	  <label class="col-md-4 control-label" for="inputs">Available pieces</label>
 	  <div class="col-md-4">                     
-		<textarea rows='10' class="form-control" id="inputs" name="inputs">one per line</textarea>
+		<textarea rows='6' class="form-control" id="inputs" name="inputs">one per line</textarea>
 	  </div>
 	</div>
 
@@ -17,15 +17,15 @@
 	<div class="form-group">
 	  <label class="col-md-4 control-label" for="outputs">Pieces to cut</label>
 	  <div class="col-md-4">                     
-		<textarea rows='10' class="form-control" id="outputs" name="outputs">one per line</textarea>
+		<textarea rows='6' class="form-control" id="outputs" name="outputs">one per line</textarea>
 	  </div>
 	</div>
 
 	<!-- Button -->
 	<div class="form-group">
-	  <label class="col-md-4 control-label" for="submit">Then go!</label>
+	  <label class="col-md-4 control-label" for="submit">Then calculate!</label>
 	  <div class="col-md-4">
-		<button type="submit" id="submit" name="submit" class="btn btn-success">Submit</button>
+		<button type="submit" id="submit" name="submit" class="btn btn-success">Calculate</button>
 	  </div>
 	</div>
 
